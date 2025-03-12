@@ -1,0 +1,34 @@
+﻿@page
+@model EquipmentService.Pages.Equipments.CreateModel
+@{
+    ViewData["Title"] = "Create Equipment";
+}
+
+<h1>Create Equipment</h1>
+
+<h4>Equipment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Equipment.Name" class="control-label"></label>
+                <input asp-for="Equipment.Name" class="form-control" />
+                <span asp-validation-for="Equipment.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Equipment.Description" class="control-label"></label>
+                <input asp-for="Equipment.Description" class="form-control" />
+                <span asp-validation-for="Equipment.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Equipment.Price" class="control-label"></label>
+                <input asp-for="Equipment.Price" class="form-control" />
+                <span asp-validation-for="Equipment.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

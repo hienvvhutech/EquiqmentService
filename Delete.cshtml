@@ -1,0 +1,22 @@
+﻿@page
+@model EquipmentService.Pages.Equipments.DeleteModel
+@{
+    ViewData["Title"] = "Delete Equipment";
+}
+
+<h1>Delete Equipment</h1>
+
+<h4>Equipment</h4>
+<hr />
+<div>
+    <h4>Are you sure you want to delete this?</h4>
+    <div>
+        <h5>@Model.Equipment.Name</h5>
+        <h5>@Model.Equipment.Description</h5>
+        <h5>@Model.Equipment.Price</h5>
+    </div>
+    <form method="post">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Cancel</a>
+    </form>
+</div>
